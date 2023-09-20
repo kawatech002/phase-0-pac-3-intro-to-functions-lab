@@ -28,3 +28,15 @@ before(function(done) {
     return done();
   });
 });
+
+function sayHiToHeadphonedRoommate(string) {
+  if (string.toLowerCase() === "hello") {
+    return "I can't hear you!";
+  } else if (string === "HELLO") {
+    return "YES INDEED!";
+  } else if (string === "Let's have dinner together!") {
+    return "I would love to!";
+  } else {
+    return "I can't hear you!";
+  }
+}
